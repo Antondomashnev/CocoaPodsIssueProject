@@ -13,6 +13,7 @@
 		6D5B63B51D6F8C0400A9B1FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D5B63B31D6F8C0400A9B1FB /* Main.storyboard */; };
 		6D5B63B71D6F8C0400A9B1FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D5B63B61D6F8C0400A9B1FB /* Assets.xcassets */; };
 		6D5B63BA1D6F8C0400A9B1FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D5B63B81D6F8C0400A9B1FB /* LaunchScreen.storyboard */; };
+		6D5B63C31D6F8C1800A9B1FB /* SwiftClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5B63C21D6F8C1800A9B1FB /* SwiftClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		6D5B63B61D6F8C0400A9B1FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D5B63B91D6F8C0400A9B1FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D5B63BB1D6F8C0400A9B1FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D5B63C11D6F8C1800A9B1FB /* CocoaPodsTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocoaPodsTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		6D5B63C21D6F8C1800A9B1FB /* SwiftClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		6D5B63A91D6F8C0400A9B1FB /* CocoaPodsTest */ = {
 			isa = PBXGroup;
 			children = (
+				6D5B63C21D6F8C1800A9B1FB /* SwiftClass.swift */,
 				6D5B63AD1D6F8C0400A9B1FB /* AppDelegate.h */,
 				6D5B63AE1D6F8C0400A9B1FB /* AppDelegate.m */,
 				6D5B63B01D6F8C0400A9B1FB /* ViewController.h */,
@@ -67,6 +71,7 @@
 				6D5B63B81D6F8C0400A9B1FB /* LaunchScreen.storyboard */,
 				6D5B63BB1D6F8C0400A9B1FB /* Info.plist */,
 				6D5B63AA1D6F8C0400A9B1FB /* Supporting Files */,
+				6D5B63C11D6F8C1800A9B1FB /* CocoaPodsTest-Bridging-Header.h */,
 			);
 			path = CocoaPodsTest;
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 			files = (
 				6D5B63B21D6F8C0400A9B1FB /* ViewController.m in Sources */,
 				6D5B63AF1D6F8C0400A9B1FB /* AppDelegate.m in Sources */,
+				6D5B63C31D6F8C1800A9B1FB /* SwiftClass.swift in Sources */,
 				6D5B63AC1D6F8C0400A9B1FB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,10 +271,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CocoaPodsTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.antondomashnev.CocoaPodsTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CocoaPodsTest/CocoaPodsTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -276,10 +285,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CocoaPodsTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.antondomashnev.CocoaPodsTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CocoaPodsTest/CocoaPodsTest-Bridging-Header.h";
 			};
 			name = Release;
 		};
